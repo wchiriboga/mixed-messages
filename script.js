@@ -19,3 +19,18 @@ const randomJoke = () => {
     randomNumber = Math.floor(Math.random() * jokeCollection.length);
     return jokeCollection[randomNumber];
 }
+
+const combineRandomJokes = () => {
+    joke_1 = randomJoke();
+    joke_2 = randomJoke();
+    if (joke_1 === joke_2) {
+        return joke_1;
+    } else {
+        return {
+            setUp: joke_1.setUp,
+            punchLine: joke_2.punchLine
+        }
+    }
+};
+testJoke = combineRandomJokes();
+console.log(testJoke);
