@@ -1,16 +1,16 @@
 // storing science jokes in object arrays, object is named after joke subject.
 // factory function for jokes
-const jokeObjects = (joke) => {
+const joke = (setUp, punchLine) => {
     return {
-        joke
+        setUp,
+        punchLine
     }
 }
 
-Helium = jokeObjects(`I was reading a book on helium. I couldnt't put it down!`);
-Earthquake = jokeObjects(`One tectonic plate bumped into another and said Sorry My Fault!`);
-Light = jokeObjects(`Since light travels faster than sound, people may appear bright until they speak.`);
-jokes = [Helium, Earthquake, Light];
-console.log(Helium);
-console.log(Earthquake);
-console.log(Light);
-console.log(jokes);
+mathJoke_1 = joke(`Why did the mathematical tree fall over?`, `Because it had no real roots!`);
+mathJoke_2 = joke(`Say,Cube, do you consider yourself to be religious?`, `I believe there are higher powers than us, if thats what you mean`)
+mathJoke_3 = joke(`Why is the obtuse triangle always upset?`,`Because it is never right.`);
+sciencejoke_1 = joke(`Why cant you trust an atom?`, `Because they make up everything.`);
+sciencejoke_2 = joke(`What did the earth say to the other planets?`, `You guys have no life.`);
+sciencejoke_3 = joke(`What does a subatomic duck say?`, `Quark!`);
+console.log(mathJoke_3);
