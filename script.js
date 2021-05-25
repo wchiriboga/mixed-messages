@@ -13,4 +13,9 @@ mathJoke_3 = joke(`Why is the obtuse triangle always upset?`,`Because it is neve
 sciencejoke_1 = joke(`Why cant you trust an atom?`, `Because they make up everything.`);
 sciencejoke_2 = joke(`What did the earth say to the other planets?`, `You guys have no life.`);
 sciencejoke_3 = joke(`What does a subatomic duck say?`, `Quark!`);
-console.log(mathJoke_3);
+jokeCollection = [mathJoke_1, mathJoke_2, mathJoke_3, sciencejoke_1, sciencejoke_2, sciencejoke_3];
+
+const randomJoke = () => {
+    randomNumber = Math.floor(Math.random() * jokeCollection.length);
+    return jokeCollection[randomNumber];
+}
